@@ -5,9 +5,7 @@ const PORT = 8080;
 const server = http.createServer((req, res) => {
   if (req.method === "GET" && req.url === "/") {
     res.writeHead(200, { "Content-Type": "text/plain" });
-    res.end(
-      "Expire test build should not be trigger when limit is reached for execution",
-    );
+    res.end("Expire ould not be trigger when limit is reached for execution");
   } else {
     res.writeHead(404, { "Content-Type": "text/plain" });
     res.end("Not Found");
